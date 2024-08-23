@@ -55,7 +55,7 @@ class ProcessSimulation implements ShouldQueue
         $Identificador = 1;
         $tipo =3;
         //email y telefono del usuario separado por comas
-        $emailTelefono = $data->email.','.$data->telefono;
+        $emailTelefono = $data->Email.','.$data->Celular;
         sysComunicacionesRegistros::create([
            'tipo'=>3,
            'identificador'=>$sysComunicaciones->Identificador,
