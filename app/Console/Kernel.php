@@ -25,7 +25,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('ProcessSimulation')->everyMinute();
+        //Solo se pueden enviar mensajes entre los lunes y sábados entre las 8:00 am – 9:00 pm.
+        $schedule->job(new ProcessSimulation)->mondays()->tuesdays()->wednesdays()->thursdays()->fridays()->saturdays()->dailyAt('08:00')->between('08:00', '21:00');
     }
 
     /**
