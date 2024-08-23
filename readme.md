@@ -11,6 +11,10 @@ Nombre de la base de datos MySQL : u899984956_prueba_gvivas
 Nombre de usuario MySQL : u899984956_prueba_gvivas
 Contraseña: Prueba@2024
 ```
+### Instalar Compose
+```
+composer install
+```
 
 ### Correr la Aplicacion
 ```
