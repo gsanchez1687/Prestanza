@@ -41,7 +41,7 @@ class ProcessSimulation implements ShouldQueue
         $simulacionHipotecas = simulacionHipotecas::where('estado','=','0')
         ->where('condicion','=','0')
         ->where('garantias','<>','1')
-        ->where('Fecha_simulacion','<',date('Y-m-d', strtotime('-3 months')))
+        ->where('Fecha_simulacion','>',date('Y-m-d', strtotime('-3 months')))
         ->limit(1)
         ->get();
 
